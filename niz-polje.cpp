@@ -2,22 +2,15 @@
 using namespace std;
 
 int main(){
-    int polje[10];
-    
-    for (int j=0;j<20;j+=2){
-        for (int i=4+j;i<24;i+2){
-            polje[j] = i;
-            
-            //cout<<j<<"  -  "<<polje[j]<<endl;
-            break;
-        }
-    }
     cout<<"[";
-    for(int i=0;i<17;i+=2){
-        cout<<polje[i]<<", ";
+    int polje[10], brojac=4;
+    for (int i=0;i<10;i++){
+        polje[i] = brojac;
+        brojac += 2;
+        if (i!=9)
+            cout<<", ";
     }
-    cout<<polje[-1]<<"]"<<endl;
-    
+    cout<<"]"<<endl;
     system("pause");
     return 0;
 }
