@@ -8,9 +8,9 @@ int main(){
         polje[i] = brojac;
         brojac += 2;
         if (i!=9)
-            cout<<", ";
+            cout<<polje[i]<<", ";
     }
-    cout<<"]"<<endl;
+    cout<<polje[9]<<"]"<<endl;
     system("pause");
     return 0;
 }
